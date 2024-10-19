@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), 
+            linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+            background-blend-mode: multiply;
+        }
+        h1{
+            text-align: center;
+            font-size: 3rem;
+            background-image: linear-gradient(to top, rgb(97, 97, 239), rgb(255, 0, 255));
+            -webkit-background-clip: text;
+            color: transparent;  
+        }
+        #container {
+            display: flex;
+            justify-content: space-around; 
+            align-items: center;     
+            height: 200px;
+            width: 100%;
+            padding-top: 100px;
+        }
+        .box:nth-child(1){
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: center;  
+            width: 200px;
+            height: 200px;
+            margin: 10px;            
+            background-color: yellow;
+            border: 5px solid rgb(206, 187, 93);
+            transition: opacity 0.3s ease;
+        }
+        .box:nth-child(2){
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: center;  
+            width: 200px;
+            height: 200px;
+            margin: 10px;            
+            background-color: palevioletred;
+            border: 5px solid rgb(238, 202, 208);
+            transition: opacity 0.3s ease;
+        }
+        .box:nth-child(3){
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: center;  
+            width: 200px;
+            height: 200px;
+            margin: 10px;            
+            background-color: rgb(253, 14, 14);
+            border: 5px solid rgb(254, 98, 98);
+            transition: opacity 0.3s ease;
+        }
+        .box:nth-child(4){
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: center;  
+            width: 200px;
+            height: 200px;
+            margin: 10px;            
+            background-color: green;
+            border: 5px solid rgb(0, 255, 30);
+        }
+        #container:hover .box:not(:hover) {
+            opacity: 0.3; 
+        }
+        
+        .box:hover {
+            opacity: 1; 
+        }
+    </style>
+</head>
+<body>
+    <h1>CARDS</h1>
+    <div id="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

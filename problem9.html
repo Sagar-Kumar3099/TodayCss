@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Section</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 10vh;
+    margin-top: 10px;
+    margin-left: 35px;
+    margin-right: 2px;
+    
+}
+
+.pricing {
+    text-align: left;
+    max-width: 900px;
+}
+h4 {
+    color: #5a54e8;
+    justify-content: left;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color:white;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #b3b3b3;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 9px;
+    width: 500%;
+    height: 100%s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.pro {
+    border: 2px solid #fff;
+}
+
+.billing-options {
+    display: flex;
+    justify-content: right;
+    margin: 10px 0;
+    color: #b3b3b3;
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+    margin: 20px 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+
+ul li::before {
+    content: "✔";
+    color: #1912e9;
+    position: absolute;
+    left: 0;
+}
+
+.basic ul li::before {
+    content: "—";
+    color: #b3b3b3;
+}
+
+button {
+    background-color: #726ef7;
+    color: white;
+    border: none;
+    padding: 10px 90px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a54e8;
+}
+
+    </style>
+</head>
+<body>
+    <section class="pricing">
+        <h4>PRICING</h4>
+        <h2>One Price for Everything</h2>
+        <p>The simplest pricing in the industry. You won't need a calculator for this.</p>
+
+        <div class="pricing-cards">
+            <div class="card pro">
+                <h3>Pro</h3>
+                <p>Includes everything you need for your professional website</p>
+                <div class="billing-options">
+                    <label>Bill Monthly</label>
+                    <input type="checkbox" checked> 
+                    <label>Bill Yearly</label>
+                </div>
+                <p><h2>$20</h2> / Site / Month (billed annually)</p>
+                
+                <ul>
+                    <li>Custom Domains</li>
+                    <li>GDPR Solution</li>
+                    <li>Beautiful Site Design</li>
+                    <li>Super-Fast Hosting</li>
+                    <li>Analytics</li>
+                    <li>Custom Forms</li>
+                    <li>Blogging</li>
+                
+                   <li>Password Protection</li>
+                    <li>Multilingual Sites</li>
+                    <li>User Management</li>
+                    <li>Unlimited Pages</li>
+                    <li>Unlimited Team Members</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+
+            <div class="card basic">
+                <h3>Basic</h3>
+                <p>Publish your site for free with almost all pro feature.</p>
+                <h2>Free</h2>
+                <p>Everything from Pro, except:</p>
+                <ul>
+                    <li>No Custom Domains</li>
+                    <li>"Made with Umso" Branding</li>
+                </ul>
+                <p>No credit card required</p>
+                <button>Get Started</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

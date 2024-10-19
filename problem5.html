@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: 5px solid black;
+            display: inline-block;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        #list1 li:nth-child(odd){
+            color: red;
+            &::marker{
+                color: red;
+            }
+         
+        }
+       
+        #list1 li:nth-child(even){
+            color: black;
+            &::marker{
+                color: black;
+            }
+        }
+        li::marker{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list1">
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+        <li>item-6</li>
+        <li>item-7</li>
+        <li>item-8</li>
+        <li>item-9</li>
+        <li>item-10</li>
+    </ul>
+    <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+        <li>item-6</li>
+        <li>item-7</li>
+        <li>item-8</li>
+        <li>item-9</li>
+        <li>item-10</li>
+    </ul>
+</body>
+</html>
